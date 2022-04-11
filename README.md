@@ -6,7 +6,7 @@
 2. Open **Command Prompt** (Not in Admin)
 3. Copy/paste the command:
 
-`git clone https://github.com/BetterDiscord/BetterDiscord.git && cd ./BetterDiscord/ && npm install && npm run build && npm run inject`
+```git clone https://github.com/BetterDiscord/BetterDiscord.git && cd ./BetterDiscord/ && npm install && npm run build && npm run inject```
 
 [Video of Manual Install](https://user-images.githubusercontent.com/90428263/162848023-9816afe8-8e77-44b5-afe2-054fd9131700.mp4)
 
