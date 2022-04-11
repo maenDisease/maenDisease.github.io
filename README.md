@@ -1,8 +1,8 @@
 # Manual Install (Windows)
 
 1. Install **Git** and **Node.js**
-   - https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe
-   - https://nodejs.org/dist/v16.13.1/node-v16.13.1-x64.msi
+   - [https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe](https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/Git-2.34.1-64-bit.exe)
+   - [https://nodejs.org/dist/v16.13.1/node-v16.13.1-x64.msi](https://nodejs.org/dist/v16.13.1/node-v16.13.1-x64.msi)
 2. Open **Command Prompt** (Not in Admin)
 3. Copy/paste the command:
 
