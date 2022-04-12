@@ -21,6 +21,8 @@ Add `PTB` or `Canary` to `npm run inject` for non-stable clients = `npm run inje
 
 [Video of Manual Install](https://user-images.githubusercontent.com/90428263/162848023-9816afe8-8e77-44b5-afe2-054fd9131700.mp4)
 
+____
+
 ## (MacOS)
 
 1. Install **Git** and **Node.js**. Other versions may not work.
