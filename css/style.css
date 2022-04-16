@@ -1,0 +1,42 @@
+:root {
+    --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --background-tertiary: #202225;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: var(--font-primary);
+    text-rendering: optimizeLegibility;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    background: transparent;
+}
+
+#app-mount {
+    position: absolute;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-tertiary);
+    text-rendering: optimizeLegibility;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.toilet {
+    display:block;
+    margin: auto;
+    width: 200px;
+}
