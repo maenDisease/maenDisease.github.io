@@ -43,6 +43,8 @@ body {
 
 #app-mount.libertine {
     background-color: black;
+    align-items: center;
+    justify-content: center;
 }
 
 .libertine .iconWrapper {
