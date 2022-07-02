@@ -1,0 +1,93 @@
+:root {
+    --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --background-tertiary: #202225;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: var(--font-primary);
+    text-rendering: optimizeLegibility;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    background: transparent;
+}
+
+#app-mount {
+    position: absolute;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-tertiary);
+    text-rendering: optimizeLegibility;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#app-mount.libertine {
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.libertine .iconWrapper {
+    display: block;
+    margin: auto;
+    width: 42vw;
+    height: 42vw;
+    transition: width 1s, height 1s, box-shadow 1s;
+}
+
+.libertine .iconWrapper:hover {
+    width: 44vw;
+    height: 44vw;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.libertine .iconWrapper img {
+    width: 100%;
+}
+
+.libertine .iconWrapper::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s;
+    background: url(https://64.media.tumblr.com/ced892e7d72771e32ef50b905e8da33c/tumblr_mx2am9n0h61rioxyio1_500.gif);
+}
+
+.libertine .iconWrapper:hover::before {
+    background: url(https://64.media.tumblr.com/ced892e7d72771e32ef50b905e8da33c/tumblr_mx2am9n0h61rioxyio1_500.gif);
+    content: '';
+    opacity: 0.05;
+    transition: opacity 1s;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .libertine .iconWrapper {
+        width: 72vw;
+        height: 72vw;
+    }
+
+    .libertine .iconWrapper:hover {
+        width: 74vw;
+        height: 74vw;
+    }
+}

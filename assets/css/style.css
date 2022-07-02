@@ -35,65 +35,73 @@ body {
     flex-direction: column;
 }
 
-.toilet {
-    display: block;
-    margin: auto;
-    width: 200px;
+#bg-wrapper {
+    z-index: -1;
 }
 
-#app-mount.libertine {
-    background-color: black;
-    align-items: center;
-    justify-content: center;
-}
-
-.libertine .iconWrapper {
-    display: block;
-    margin: auto;
-    width: 42vw;
-    height: 42vw;
-    transition: width 1s, height 1s, box-shadow 1s;
-}
-
-.libertine .iconWrapper:hover {
-    width: 44vw;
-    height: 44vw;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
-}
-
-.libertine .iconWrapper img {
+.bg {
+    position: absolute;
     width: 100%;
+    height: 100%;
+}
+.toilet {
+    position: absolute;
+    display: block;
+    width: 150px;
+    padding: 20px;
 }
 
-.libertine .iconWrapper::before {
-    content: '';
-    position: fixed;
-    top: 0;
+.toilet.toilet2 {
+    right: 0;
+}
+
+.toilet.toilet3 {
+    bottom: 0;
     left: 0;
+}
+
+.toilet.toilet4 {
+    bottom: 0;
+    right: 0;
+}
+
+#app-container {
+    position: absolute;
+}
+
+.title-wrapper {
+    position: relative;
+    display: flex;
     width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 1s;
-    background: url(https://64.media.tumblr.com/ced892e7d72771e32ef50b905e8da33c/tumblr_mx2am9n0h61rioxyio1_500.gif);
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
 }
 
-.libertine .iconWrapper:hover::before {
-    background: url(https://64.media.tumblr.com/ced892e7d72771e32ef50b905e8da33c/tumblr_mx2am9n0h61rioxyio1_500.gif);
-    content: '';
-    opacity: 0.05;
-    transition: opacity 1s;
+.title {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 255, 0);
+    font-family: "comic sans ms";
+    font-style: italic;
+    filter: drop-shadow(10px 5px 2px red);
+    margin: 0;
 }
 
-@media only screen and (max-width: 700px) {
+.subtitle {
+    font-size: 35px;
+    color: rgb(255, 238, 0);
+    font-family: "comic sans ms";
+    font-style: italic;
+    filter: drop-shadow(5px 2px 2px green);
+}
 
-    .libertine .iconWrapper {
-        width: 72vw;
-        height: 72vw;
-    }
-
-    .libertine .iconWrapper:hover {
-        width: 74vw;
-        height: 74vw;
-    }
+.subtitle2 {
+    font-size: 70px;
+    color: rgb(255, 0, 0);
+    font-family: "comic sans ms";
+    font-style: italic;
+    filter: 
+    drop-shadow(0 10px 0 rgb(217, 255, 0))
+    drop-shadow(0 15px 0 rgb(38, 0, 255));
 }
