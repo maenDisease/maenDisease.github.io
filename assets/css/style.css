@@ -125,7 +125,6 @@ body {
 }
 
 .footer {
-    outline: 1px dashed cyan;
     position: fixed;
     left: 0;
     bottom: 50px;
