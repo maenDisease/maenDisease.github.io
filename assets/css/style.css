@@ -1,49 +1,24 @@
-:root {
-    --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --background-tertiary: #202225;
-}
-
+html,
 body {
-    height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    font-family: var(--font-primary);
-    text-rendering: optimizeLegibility;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    overflow: hidden;
-    background: transparent;
-}
-
-#app-mount {
-    position: absolute;
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
     height: 100%;
-    width: 100%;
-    background-color: var(--background-tertiary);
-    text-rendering: optimizeLegibility;
     overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
 }
 
 #bg-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
 
-.bg {
-    position: absolute;
+#bg-wrapper .bg {
     width: 100%;
     height: 100%;
 }
+
+/* Toilet */
 .toilet {
     position: absolute;
     display: block;
@@ -51,7 +26,12 @@ body {
     padding: 20px;
 }
 
+.toilet.toilet1 {
+    top: 0;
+    left: 0;
+}
 .toilet.toilet2 {
+    top: 0;
     right: 0;
 }
 
@@ -65,17 +45,25 @@ body {
     right: 0;
 }
 
-.spinningcenter {
+/* App */
+#app-mount {
     position: absolute;
-    display: block;
-    width: 128px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0;
+    width: 100%;
+    height: 100%;
 }
 
-#app-container {
-    position: absolute;
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.advert {
+    width: 500px;
 }
 
 .title-wrapper {
@@ -122,24 +110,4 @@ body {
 
 .body {
     text-align: center;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.advert {
-    width: 500px;
-}
-
-.app {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
