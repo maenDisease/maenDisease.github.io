@@ -51,13 +51,19 @@ body {
     inset: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.donate {
+    outline: 1px dashed cyan;
+    position: absolute;
+    z-index: 9999;
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 10px;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -67,13 +73,11 @@ body {
 }
 
 .title-wrapper {
+    display: block;
     position: relative;
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    flex-direction: column;
     margin-top: 50px;
-    margin-bottom: 50px;
+    filter: contrast(3);
+    outline: 1px dashed cyan;
 }
 
 .title {
@@ -82,8 +86,8 @@ body {
     color: rgb(0, 255, 0);
     font-family: "comic sans ms";
     font-style: italic;
-    filter: drop-shadow(10px 5px 2px red);
     margin: 0;
+    filter: drop-shadow(0 0 0.5px black) drop-shadow(10px 5px 2px red);
 }
 
 .subtitle {
@@ -91,7 +95,7 @@ body {
     color: rgb(255, 238, 0);
     font-family: "comic sans ms";
     font-style: italic;
-    filter: drop-shadow(5px 2px 2px green);
+    filter: drop-shadow(0 0 0.5px black) drop-shadow(5px 2px 2px green);
 }
 
 .subtitle2 {
@@ -100,7 +104,9 @@ body {
     font-family: "comic sans ms";
     font-style: italic;
     filter: 
+    drop-shadow(0 0 0.5px black)
     drop-shadow(0 10px 0 rgb(217, 255, 0))
+    drop-shadow(0 0 0.5px black)
     drop-shadow(0 15px 0 rgb(38, 0, 255));
 }
 
@@ -109,12 +115,16 @@ body {
 }
 
 .body {
+    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
     gap: 8px;
+    outline: 1px dashed cyan;
+    width: calc(70vw);
 }
 
 .kofi-button {
